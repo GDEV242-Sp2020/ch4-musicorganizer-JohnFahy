@@ -78,7 +78,7 @@ public class MusicOrganizer
         do {
             int index = randomTrack.nextInt(shufflePlayList.size());
             Track track = shufflePlayList.get(index);
-            player.startPlaying(track.getFilename());
+            player.playSample(track.getFilename());
         System.out.println("Now playing: " + track.getArtist() + " - " + track.getTitle());
         shufflePlayList.remove(index);
         
